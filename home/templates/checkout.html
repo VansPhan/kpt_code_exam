@@ -1,0 +1,12 @@
+<div class="container">
+	<h1>Cart</h1>
+	<div class="products">
+		<div class="product" ng-repeat="item in cart" ng-show="item.isVisible">
+			<img ng-src="{{ item.productPicture }}">
+			<h1>{{ item.productName }}</h1>
+			<p>{{ item.productPrice }} | Quantity {{ item.count }}</p>
+		</div>
+	</div>
+
+	<h1 class="right" >Total: ${{ total }}</h1>
+</div>

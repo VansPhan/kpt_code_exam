@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>KPT Code Exam</title>
+	<script type="text/javascript" src="./dependencies/angular.js"></script>
+	<script type="text/javascript" src="./dependencies/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.js"></script>
+	<script type="text/javascript" src="./home/home.js"></script>
+	<script type="text/javascript" src="./home/service.js"></script>
+	<script type="text/javascript" src="./home/directives.js"></script>
+	<script type="text/javascript" src="./home/controller.js"></script>
+	<script type="text/javascript" src="./app.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="ktpShop">
+
+<div ng-controller="HomeController">
+	<navbar></navbar>
+	<checkout ng-show="!homepage"></checkout>
+	<products ng-show="homepage"></products>
+</div>
+
+</body>
+</html>
